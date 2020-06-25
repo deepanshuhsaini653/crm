@@ -1,0 +1,42 @@
+.sidebar__list {
+  .active {
+    background: linear-gradient(45deg, $color-blue-crm, $color-pink-crm) !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 90%;
+    box-shadow: 0px 3px 11px 0 rgba(123, 31, 162, 0.5);
+    span {
+      color: $color-white;
+    }
+    svg {
+      color: $color-white;
+    }
+  }
+  .MuiListItemIcon-root {
+    min-width: 40px;
+  }
+
+  span {
+    color: $color-text-default;
+    font-size: 14px;
+    font-family: "Sen", sans-serif;
+  }
+}
+
+.sidebar--logo {
+  h5 {
+    img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    color: $color-blue-crm;
+    text-align: left;
+    margin-left: 10px;
+    span {
+      color: $color-pink-crm;
+    }
+  }
+}
+.hidelogo {
+  margin-right: 15px;
+}

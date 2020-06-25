@@ -1,0 +1,74 @@
+.header {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 250px !important;
+  background: linear-gradient(45deg, $color-blue-crm, $color-pink-crm) !important;
+  display: flex !important;
+  align-items: start !important;
+
+  &--search {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 40px !important;
+      border: 0;
+      padding: 0 15px 0 50px !important;
+      color: $color-white;
+      background: #ffffff4f;
+      font-size: 15px;
+      font-family: "Bellota", cursive;
+      transition: all ease-in-out 0.2s;
+      &::placeholder {
+        color: $color-white;
+      }
+      &:focus {
+        outline: 0;
+        &::placeholder {
+          color: $color-text-default;
+        }
+        color: $color-text-default;
+        .search-icon {
+          color: $color-text-default;
+        }
+      }
+    }
+    .search-icon {
+      position: absolute;
+      width: 10%;
+      height: 100%;
+      top: -4px;
+      left: 0;
+      color: $color-white;
+    }
+  }
+  &_settings {
+    text-align: right;
+    margin-top: 10px;
+    button {
+      color: $color-white;
+    }
+  }
+}
+.userImage {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header--menu {
+  .MuiMenu-paper {
+    top: 60px !important;
+    border-radius: 0;
+    border-bottom: solid 1px $color-grey !important;
+    svg {
+      height: 20px;
+    }
+  }
+}
+.menuheader {
+  margin-top: 15px !important;
+}

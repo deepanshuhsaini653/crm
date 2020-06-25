@@ -1,0 +1,77 @@
+.customer__header {
+  min-height: 100px;
+}
+.customer_summary_box {
+  padding: 15px;
+  margin: 0 15px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+  &:hover {
+    margin-top: -5px;
+    cursor: pointer;
+  }
+  &.first {
+    margin-left: 0 !important;
+  }
+  &.last {
+    margin-right: 0 !important;
+  }
+  &.blue {
+    background: linear-gradient(45deg, #0288d1, #26c6da) !important;
+  }
+  &.green {
+    background: linear-gradient(45deg, #43a047, #1de9b6) !important;
+  }
+  &.pink {
+    background: linear-gradient(45deg, #ff5252, #f48fb1) !important;
+  }
+  &.yellow {
+    background: linear-gradient(45deg, #ff6f00, #ffca28) !important;
+  }
+  &--icon {
+    color: $color-white;
+    svg {
+      font-size: 50px;
+    }
+  }
+  &--details {
+    text-align: right;
+    h5 {
+      color: $color-white;
+      margin: 0;
+      font-size: 30px;
+      font-family: "Bellota", cursive;
+    }
+    p {
+      color: $color-white;
+      margin: 0;
+    }
+  }
+}
+
+.submitContainer {
+  padding: 0 30px 30px;
+}
+.tabs {
+  border-right: solid 1px $color-grey;
+}
+.verticle-tabs {
+  flex-grow: 1;
+  background-color: $color-white;
+  display: flex;
+  height: 450px;
+  .MuiTab-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  button {
+    min-height: 40px !important;
+    opacity: 1;
+    color: $color-light-black;
+    svg {
+      margin-right: 8px;
+      font-size: 22px;
+    }
+  }
+}

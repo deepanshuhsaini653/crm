@@ -1,0 +1,155 @@
+.project__list {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: $color-white;
+    box-shadow: 1px 6px 9px #0000000a;
+    &--logo {
+        svg {
+            color: rgba(0, 0, 0, 0.36);
+            font-size: 40px;
+            font-weight: 100;
+        }
+    }
+    &--name {
+        h4 {
+            color: $color-black;
+            font-size: 18px;
+            margin: 0;
+        }
+        h6 {
+            margin: 15px 0;
+            font-size: 12px;
+            span {
+                background-color: $color-grey;
+                padding: 6px 15px;
+                border-radius: 50px;
+            }
+        }
+    }
+    &--price {
+        h4 {
+            margin: 0;
+            color: $color-black;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .label {
+            margin: 0 0 10px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .delvery {
+            margin: 5px 0 0;
+            color: $color-black;
+            font-size: 13px;
+            span {
+                color: $color-text-default;
+                font-weight: 400;
+                border-bottom: dotted 1px;
+            }
+        }
+    }
+    &--customer {
+        display: flex;
+        align-items: center;
+        .customer--img {
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+        }
+        .customer--details {
+            h4 {
+                margin: 0;
+                color: $color-black;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .label {
+                margin: 0 0 10px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+    &--assigned {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .assigned--img {
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: -18px;
+                border: solid 1px #ddd;
+                padding: 2px;
+                background: #fff;
+            }
+        }
+        .assigned--details {
+            h4 {
+                margin: 0;
+                color: $color-black;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .label {
+                margin: 0 0 10px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+    &--action {
+        h6 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            color: $color-black;
+            border: solid 2px $color-grey;
+            border-radius: 0 50px 50px 50px;
+            padding: 10px 5px;
+            position: relative;
+            font-family: "Montserrat", sans-serif;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                top: 50%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+            }
+            &.verify {
+                &::before {
+                    background-color: $color-verify;
+                }
+            }
+            &.progress {
+                &::before {
+                    background-color: $color-progress;
+                }
+            }
+            &.review {
+                &::before {
+                    background-color: $color-review;
+                }
+            }
+            &.waiting {
+                &::before {
+                    background-color: $color-waiting;
+                }
+            }
+        }
+    }
+    &--link {
+        text-align: center;
+    }
+}

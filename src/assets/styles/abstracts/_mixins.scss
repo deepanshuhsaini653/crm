@@ -1,0 +1,94 @@
+$xx-small-width: 320px;
+$x-small-width: 620px;
+$small-width: 1080px;
+$portrait-width: 768px;
+$medium-width: 1081px;
+$large-width: 1280px;
+$x-large-width: 1440px;
+
+@mixin xx-small {
+  @media (max-width: #{$xx-small-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin x-small {
+  @media (min-width: #{$x-small-width}) and (max-width: #{$small-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large-width}) and (max-width: #{$x-large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media (min-width: #{$x-large-width}) {
+    @content;
+  }
+}
+@mixin x-small_down {
+  @media (max-width: #{$x-small-width}) {
+    @content;
+  }
+}
+
+@mixin small_down {
+  @media (max-width: #{$small-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin portrait_down {
+  @media (max-width: #{$portrait-width - 1px}) {
+    @content;
+  }
+}
+@mixin portrait_up {
+  @media (max-width: #{$portrait-width}) {
+    @content;
+  }
+}
+@mixin small_up {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin medium_down {
+  @media (max-width: #{$medium-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium_up {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin large_down {
+  @media (max-width: #{$large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin large_up {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
